@@ -1,0 +1,66 @@
+.address-banner {
+  z-index: 1;
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 5px 11px 20px 2px rgba(199, 199, 199, 0.8);
+  -moz-box-shadow: 5px 11px 20px 2px rgba(199, 199, 199, 0.8);
+  border-radius: 10px;
+  height: auto;
+  width: 60%;
+  justify-content: space-between;
+  margin-top: 4%;
+  padding: 20px 40px;
+  text-align: left;
+
+  @media (max-width: $medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .divider {
+      display: none;
+    }
+  }
+/* 
+  @media (min-width: $s-medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .divider {
+      display: none;
+    }
+  }
+  @media (min-width: $small) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .divider {
+      display: none;
+    }
+  } */
+
+  .item {
+    align-self: flex-start;
+    left: 0;
+    position: relative;
+    h4 {
+      color: #a2a2a2;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .desc {
+      color: black;
+      font-size: 22px;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+  }
+
+  .divider {
+    border-left: 1px solid #a2a2a2;
+    border-right: 1px solid #a2a2a2;
+    height: 80px;
+    position: relative;
+    margin-right: 50px;
+  }
+}
