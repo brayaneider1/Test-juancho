@@ -1,4 +1,4 @@
-.search {
+.Search {
   border-radius: 15px;
   background: white;
   -webkit-box-shadow: 1px 0px 5px -3px rgba(0, 0, 0, 0.75);
@@ -18,17 +18,16 @@
         width: 100%;
         border: none;
         color: black;
-        font-weight: bold;
-        font-size: 22px ;
+        font-weight: 400;
+        font-size: 22px;
         &:focus {
           box-shadow: 0 0 0 0 white !important;
-
         }
-        &::placeholder{
-            color:#a2a2a2 ;
-            font-weight: 400;
-            font-size: 20px;
-            font-family: 'Roboto';
+        &::placeholder {
+          color: #a2a2a2;
+          font-weight: 400;
+          font-size: 20px;
+          font-family: "Roboto";
         }
       }
     }
@@ -42,14 +41,35 @@
       -moz-border-radius-bottomright: 10px;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
-      padding: 0 30px;
+      padding: 0 20px;
       display: flex;
       align-items: center;
-      background: #3f3f3f;
+      background: black;
       color: white;
       right: 0;
       font-weight: bold;
-      font-size: 35px;
+      font-size: 25px;
+      &:hover {
+        background: #3f3f3f;
+      }
     }
+  }
+
+  @media screen and (max-width: $xx-large) {
+    width: 50%;
+    margin-top: 5%;
+
+  }
+
+  @media screen and (max-width: $x-large) {
+    width: 60%;
+    margin-top: 7%;
+
+  }
+
+  @media screen and (max-width: $s-medium) {
+    width: 90%;
+    margin-top: 15%;
+
   }
 }
